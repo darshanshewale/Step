@@ -1,13 +1,76 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.steps {
+  width: 60rem;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  padding: 2.5rem 10rem;
+  margin: 10rem auto;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.numbers > div {
+  height: 4rem;
+  aspect-ratio: 1;
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.numbers .active {
+  background-color: #7950f2;
+  color: white;
+}
+
+.message {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  cursor: pointer;
+  border-radius: 10rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+}
+.close {
+  border: none;
+  font-size: 5rem;
+  background: none;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.close:hover {
+  color: #7950f2;
 }
